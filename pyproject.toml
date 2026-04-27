@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tracking-hungarian-core"
+version = "0.1.0"
+description = "Hungarian tracking core for PyReconstruct (ROI table -> TrackIDs)."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy==1.24.1",
+  "pandas==2.2.2",
+  "scipy==1.14.1"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
